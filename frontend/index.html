@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NANABA AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="container">
+
+    <div class="header">
+        <h1>👑 NANABA AI</h1>
+        <p>Your Personal AI Servant</p>
+    </div>
+
+    <div id="chatbox" class="chatbox"></div>
+
+    <div class="input-area">
+        <input
+            id="message"
+            type="text"
+            placeholder="Ask anything, your majesty..."
+            onkeydown="if(event.key==='Enter')sendMessage()">
+
+        <button onclick="sendMessage()">
+            Send
+        </button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
